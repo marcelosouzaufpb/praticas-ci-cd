@@ -1,0 +1,24 @@
+{
+  "name": "praticas-ci-cd",
+  "version": "0.0.1",
+  "description": "Projeto para a pratica de CI e CD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcelosouzaufpb/praticas-ci-cd.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "demo"
+  ],
+  "author": "Marcelo Souza Santos <marcelossficial@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcelosouzaufpb/praticas-ci-cd/issues"
+  },
+  "homepage": "https://github.com/marcelosouzaufpb/praticas-ci-cd#readme"
+}
