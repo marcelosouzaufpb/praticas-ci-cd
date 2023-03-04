@@ -10,6 +10,6 @@ describe('Say Hello tests', () => {
     it('Should say Marcelo Souza', () => {
         const response = sayHelloWorld.sayHello('Marcelo Souza');
 
-        expect(response).toBe('Hello Marcelo Souza! ');
+        expect(response).toBe('Hello Marcelo Souza!');
     })
 });
