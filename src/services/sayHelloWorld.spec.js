@@ -7,9 +7,9 @@ describe('Say Hello tests', () => {
         expect(response).toBe('Hello World!');
     });
 
-    it('Should say Marcelo Souza Santos', () => {
-        const response = sayHelloWorld.sayHello('Marcelo Souza Santos');
+    it('Should say Marcelo Souza', () => {
+        const response = sayHelloWorld.sayHello('Marcelo Souza');
 
-        expect(response).toBe('Marcelo Souza Santos!');
+        expect(response).toBe('Hello Marcelo Souza!');
     })
 });
