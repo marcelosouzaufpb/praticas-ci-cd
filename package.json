@@ -2,9 +2,10 @@
   "name": "praticas-ci-cd",
   "version": "0.0.1",
   "description": "Projeto para a pratica de CI e CD",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/marcelosouzaufpb/praticas-ci-cd/issues"
   },
-  "homepage": "https://github.com/marcelosouzaufpb/praticas-ci-cd#readme"
+  "homepage": "https://github.com/marcelosouzaufpb/praticas-ci-cd#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
 }
