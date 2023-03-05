@@ -42,11 +42,11 @@ jobs:
     - run: npm ci
     - run: npm run test
   deploy-dev:
-    needs: test-ci, lint-ci
+    needs: [test-ci, lint-ci]
     if: github.ref == 'refs/heads/dev'
     runs-on: ubuntu-20.04
-    concurrency: deploy-to-dev
-    environment: dev
+    concurrency: deploy-to-test
+    environment: test
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 10.x
@@ -56,7 +56,7 @@ jobs:
       - run: docker build -t setup-nodejs .
       - run: echo "Deploy"
   deploy-production:
-    needs: test-ci, lint-ci
+    needs: [test-ci, lint-ci]
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-20.04
     concurrency: deploy-to-production
