@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 const sayHelloWorld = require('./sayHelloWorld');
 
+/* Test enpoint */
 describe('Say Hello tests', () => {
   it('Should say Hello World', () => {
     const response = sayHelloWorld.sayHello();
